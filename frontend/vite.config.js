@@ -8,7 +8,7 @@ export default defineConfig({
   },
   preview: {
     allowedHosts: ['happy-intuition-production-e998.up.railway.app'],
-    host: true,
+    host: '0.0.0.0',
     port: process.env.PORT ? parseInt(process.env.PORT) : 4173,
   },
   server: {
