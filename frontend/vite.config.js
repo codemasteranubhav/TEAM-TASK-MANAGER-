@@ -6,6 +6,11 @@ export default defineConfig({
   build: {
     outDir: 'dist',
   },
+  preview: {
+    allowedHosts: ['happy-intuition-production-e998.up.railway.app'],
+    host: true,
+    port: process.env.PORT ? parseInt(process.env.PORT) : 4173,
+  },
   server: {
     port: 5173,
     proxy: {
